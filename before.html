@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>My Webpage!</title>
+        <style>
+            a::before{
+                content: "\21d2 Click here: ";
+                font-weight: bold;
+            }
+        </style><!-- a- anchor(labels the content). ::before is a Css pseudo class element; \21d2 is a 
+        special hex value for a unicode symbol such as emoji and other symbols have particular codes; 
+        The style tag having this information says for every link, before the contents of that link add 
+        this paricular content i.e the symbol and the words click here.-->
+    </head>
+    <body>
+       <ul> 
+           <li><a href="#">One link</a></li> 
+           <li><a href="#">Another link</a></li>
+           <li><a href="#">Third link</a></li>
+       </ul>
+    </body>
+</html> 
