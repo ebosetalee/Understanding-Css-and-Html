@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>  
+    <head>
+        <title>My Webpage!</title> 
+        <media name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--viewport - visible area of the web page; This line tells the browser to adjust the 
+            viewport to make sure that we're scaling it to the width of the actual device, that 
+            the width of the viewport should be whatever the width of the device is.-->
+        <style> 
+            @media (min-width: 500px){
+                h1::before{
+                    content: "Welcome to my Web Page!";
+                }
+            }
+            @media (max-width: 499px){
+                h1::before{
+                    content: "Welcome!";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+    </body> 
+</html>
